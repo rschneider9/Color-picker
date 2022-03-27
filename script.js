@@ -27,17 +27,18 @@ function setColorPickerEventListeners(element, colors, pickerElements) {
 
 }
 
-function  setElementBGColor(bgelement, red, green, blue) {
+function  setElementBGColor(bgElement, red, green, blue) {
     let rgbVal = [red, green, blue].join(',');
-    bgelement.style.backgroundColor = "rgb(" + rgbVal + ")";
+    bgElement.style.backgroundColor = "rgb(" + rgbVal + ")";
 }
 
 function setDisplayValues(red, green, blue) {
     let redVal = document.getElementById("redVal");
-    let greenVal = document.getElementById("greenValVal");
-    let blueVal = document.getElementById("blueValVal");
+    let greenVal = document.getElementById("greenVal");
+    let blueVal = document.getElementById("blueVal");
 
     redVal.innerText = red;
     greenVal.innerText = green;
     blueVal.innerText = blue;
+
 }
